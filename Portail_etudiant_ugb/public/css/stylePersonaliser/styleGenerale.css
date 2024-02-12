@@ -1,0 +1,377 @@
+/* CSS VENANT DU TUTO POUR LE SIDEBAR */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*,
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-size: cover;
+}
+
+h3 {
+    font-size: 1.2375rem;
+    color: #FFF;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+/* Layout skeleton */
+
+.wrapper {
+    align-items: stretch;
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+    max-width: 264px;
+    min-width: 264px;
+    transition: all 0.35s ease-in-out;
+    box-shadow: 0 0 35px 0 rgba(49, 57, 66, 0.5);
+    z-index: 1111;
+}
+
+/* Sidebar collapse */
+
+#sidebar.collapsed {
+    margin-left: -264px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    transition: all 0.35s ease-in-out;
+}
+
+.sidebar-logo {
+    padding: 1.15rem 1.5rem;
+}
+
+.sidebar-logo a {
+    color: #e9ecef;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.sidebar-nav {
+    padding: 0;
+}
+
+.sidebar-header {
+    color: #e9ecef;
+    font-size: .75rem;
+    padding: 1.5rem 1.5rem .375rem;
+}
+
+a.sidebar-link {
+    padding: .625rem 1.625rem;
+    color: #e9ecef;
+    position: relative;
+    display: block;
+    font-size: 1rem;
+}
+
+.sidebar-link[data-bs-toggle="collapse"]::after {
+    border: solid;
+    border-width: 0 .075rem .075rem 0;
+    content: "";
+    display: inline-block;
+    padding: 2px;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.4rem;
+    transform: rotate(-135deg);
+    transition: all .2s ease-out;
+}
+
+.sidebar-link[data-bs-toggle="collapse"].collapsed::after {
+    transform: rotate(45deg);
+    transition: all .2s ease-out;
+}
+
+.content {
+    flex: 1;
+    max-width: 100vw;
+    width: 100vw;
+}
+
+/* Responsive */
+
+@media (min-width:768px) {
+    .content {
+        width: auto;
+    }
+
+         .compacted {
+             width: 50px;
+             /* Largeur compactée de la barre latérale */
+         }
+    
+         .compacted .nav-link span.menu-title {
+             display: none;
+             /* Masquer le texte des liens */
+         }
+}
+
+
+/* navebar superieur */
+
+.tire_verticale
+{
+    border-left: 1px solid #ebebeb;
+}
+
+/* autre  */
+
+/* le style est directement incorer dans les balise a du lien du sidebar */
+.menu-icon {
+    color: #b25f35 !important;
+    font-size: 18px !important;
+    font: 500 !important;
+}
+
+/* Style pour les liens dans la barre latérale */
+.sidebar-nav .nav-link {
+    color: #b25f35 !important;
+    /* Couleur du texte */
+    font-size: 18px !important;
+    /* Taille de la police */
+    font-weight: 500 !important;
+    /* Poids de la police */
+}
+
+
+
+
+/* style en cas d'activation d'un lien */
+
+.estActive {
+    background-color: rgba(0, 0, 0, 0.1);
+    /* Couleur de fond lorsque le lien est actif */
+    position: relative;
+
+    color: #3588B2 !important;
+    border-radius: 44px 0 0 44px;
+}
+
+.ul_menu-items_Padd-Marg {
+    margin: 0;
+    padding: 0;
+}
+
+/* le s  */
+
+/* les cart dans le dashbord */
+.cart_inscription_administrative {
+    background-color: #1f446e !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+}
+
+.cart_inscription_pedagogique {
+    background-color: #c5752f;
+    color: #fff;
+    border-radius: 20px !important;
+}
+
+.cart_consultation_note {
+    background-color: #307ca2 !important;
+    color: #fff !important;
+    border-radius: 20px !important;
+}
+
+.cart_aide {
+
+    background-color: #a95930;
+    color: #fff;
+    border-radius: 20px !important;
+}
+
+/* menue scrolable */
+.menueScrolable {
+    background-color: #ebebeb;
+    color: #424242;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    min-height: 100vh;
+}
+
+.menueScrolable_texteInfotmation {
+    font-size: 30px;
+    -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 112, 219, .342));
+    filter: drop-shadow(2px 2px 4px rgba(30, 112, 219, .342));
+    color: #3588b2 !important;
+}
+
+.menueScrolable-titre_sous_section {
+    font-size: 14px;
+    -webkit-filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .161));
+    filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, .161));
+    color: #b25f35 !important;
+    cursor: pointer;
+}
+
+.menueScrolable-titre_section {
+    font-size: 30px;
+    -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 112, 219, .342));
+    filter: drop-shadow(2px 2px 4px rgba(30, 112, 219, .342));
+    color: #3588b2 !important
+}
+
+footer {
+    background-color: #fefefe;
+    border-top: 1px solid #ebebeb;
+    color: #fff;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+    font-size: .9375rem;
+    font-weight: 400;
+    line-height: 1.25rem;
+    padding: 1.25rem;
+}
+
+.text_marron {
+    color: #B25F35 !important;
+}
+
+.text_marron_claire {
+    color: #D8843B !important;
+}
+
+.text_bleu_claire {
+    color: #3588B2 !important;
+}
+
+.text_bleu {
+    color: #243C58 !important;
+}
+
+.bg_marron {
+    background: #B25F35 !important;
+}
+
+.bg_marron_claire {
+    background: #D8843B !important;
+}
+
+.bg_bleu_claire {
+    background: #3588B2 !important;
+}
+
+.bg_bleu {
+    background: #243C58 !important;
+}
+
+.bg_jaune {
+    background: #F1B33C !important;
+}
+
+
+/* PAGE INSCRIPTION ADMINISTRATIVE */
+
+.section_container
+ {
+    min-height: 450px;
+    background: #fff !important;
+    border-radius: 10px;
+    border: 1px solid #dee2e6 !important;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, .175) !important;
+    padding: 1rem !important;
+}
+
+.big_indication 
+{
+    font-weight: 600;
+    font-size: 18px;
+    color: #b25f35;
+}
+
+.bg_mouvant
+ {
+    background: -webkit-gradient(linear, right top, left top, from(#3588b2), color-stop(#f1b33c), color-stop(#d8843b), to(#b25f35));
+    background: linear-gradient(270deg, #3588b2, #f1b33c, #d8843b, #b25f35);
+    background-size: 600% 600%;
+    color: #fff;
+    font-weight: 600;
+    -webkit-animation: benito 10s ease infinite;
+    animation: benito 10s ease infinite;
+    padding: 20px;
+}
+
+.big_button
+{
+    font-weight: 500;
+    font-size: 1.3rem;
+    border: none;
+    border-radius: 10px !important;
+    letter-spacing: 1px;
+    align-self: center;
+    padding: 1.5rem 1rem;
+    outline: none;
+    box-shadow: 20px 38px 34px -26px rgba(0, 0, 0, .301);
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+}
+
+.titre_section
+{
+    font-size: 30px;
+    -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 112, 219, .342));
+    filter: drop-shadow(2px 2px 4px rgba(30, 112, 219, .342));
+    color: #3588b2 !important
+}
+
+.icone_etat {
+    width: 30px;
+    margin-right: 5px;
+    margin-top: -1px;
+}
+
+img,
+svg {
+    vertical-align: middle;
+}
+img {
+    border-style: none;
+}
+
+/* PAGE DOSSIER ETUDIANT */
+
+.nav-tabs ,
+.nav-link.active
+ {
+    background: #fff;
+}
+.nav-tabs {
+    border-bottom: 1px solid #dee2e6;
+}
+.nav 
+{
+    display: -webkit-box;
+    display: flex;
+    flex-wrap: wrap;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}

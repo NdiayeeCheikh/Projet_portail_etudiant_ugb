@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\InscriptionController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,6 +13,14 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+
+
+//Route::get('/', [InscriptionController::class,'accueil']);
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard');
 });
+
+Route::get('/inscrip_admin', function () {
+    return view('inscrip_admin');
+})->name('inscrip_admin');

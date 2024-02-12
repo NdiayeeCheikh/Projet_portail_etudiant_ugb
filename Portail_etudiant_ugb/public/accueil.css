@@ -1,0 +1,129 @@
+#taille,#taill,#div_5
+ {
+    border: 0.1px solid black;
+    box-shadow: 0px 10px 10px -4.5px rgba(0, 0, 0, 0.5); /* Ajustez les valeurs selon vos besoins */
+}
+#bb{
+  margin-right: 1%;
+  border: 0.1px solid black;
+}
+
+
+#h_111
+{
+    padding-left: 0px;
+    color: #3588b2 !important;;
+}
+hr
+{
+    color: white;
+}
+#h_1
+{
+    color: #3588b2 !important;;
+}
+#h_11,#boulo
+{
+    color: #3588b2 !important;
+}
+
+#div_66
+{
+
+    border: 0.1px solid black;
+    box-shadow: 0px 10px 10px -4.5px rgba(0, 0, 0, 0.5); 
+}
+#h3_1,#coll
+{
+    color: #b25f35! important;
+}
+#colbutton:hover {
+    background-color: rgba(161, 95, 95, 0.746);
+}
+#div_1,#div_2,#div_4,#div_7
+{
+    margin-bottom: 2%;
+}
+#but5
+{
+    background-color: rgb(156, 78, 78);
+    color: white;
+}
+#div_5
+{
+    margin-bottom: 4%;
+}
+#h22_1,#iicon1
+{
+    color: #3588b2 !important;;
+}
+#cc 
+{
+  font-size: 30px;
+    -webkit-filter: drop-shadow(2px 2px 4px rgba(30, 112, 219, .342));
+    filter: drop-shadow(2px 2px 4px rgba(30, 112, 219, .342));
+    color: #3588b2 !important;
+}
+#wa
+{
+    margin-right: 0%;
+}
+
+.meme
+{
+    color: #b25f35! important;
+}
+.meme2
+{
+    color: black;
+}
+
+#taillllll {
+    margin-left: 5%; /* Remplacez la valeur en fonction de vos besoins */
+}
+
+#deco{
+
+        height: 5%;
+        border-radius: 10px;
+        animation: changeBackground 10s infinite;
+        
+    
+}
+
+#ii
+{
+    margin-right: 10px;
+}
+.bg_jaune {
+    background-color: yellow; /* ou la couleur jaune que vous préférez */
+  }
+  .bg_jaune:hover {
+    background-color: yellow; /* Conserve la couleur jaune même au survol */
+  }
+    
+#div_4,#ddd
+{
+    margin-left: 1%;
+}
+#ddd
+{
+    margin-left: 1%;
+}
+#wagnil
+{
+    height: 25px;
+}
+footer
+{
+    border-top:0.1px solid black ;
+    margin: 2%;
+}
+#foot
+{
+    color: #b25f35! important;
+}
+#pousko
+{
+    margin-bottom: 2%;
+}
