@@ -21,6 +21,6 @@ Route::get('/', function () {
     return view('dashboard');
 });
 
-Route::get('/inscrip_admin', function () {
-    return view('inscrip_admin');
-})->name('inscrip_admin');
+
+Route::get('/inscrip_admin',function () {
+        return view('inscrip_admin');})->name('inscrip_admin');
